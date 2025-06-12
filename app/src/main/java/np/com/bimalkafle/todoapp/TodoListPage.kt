@@ -109,7 +109,7 @@ fun TodoListPage(viewModel: TodoViewModel) {
 @Composable
 fun TodoCard(item: Todo, onDelete: () -> Unit, modifier: Modifier = Modifier) {
     Card(
-        modifier = modifier
+        modifier = modifier.fillMaxWidth()
             .padding(8.dp),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
